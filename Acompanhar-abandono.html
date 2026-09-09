@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Acompanhar Abandono | Patrulha das Patinhas
+    </title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="Home.html" class="logo">
+                🐾 Patrulha das Patinhas
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="Maus-tratos.html">
+                        Denúncia de Maus Tratos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Abandono.html">
+                        Denúncia de Abandono
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Acompanhar-maus-tratos.html">
+                        Acompanhar Denúncia de Maus Tratos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Acompanhar-abandono.html">
+                        Acompanhar Denúncia de Abandono
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="pagina-acompanhar">
+
+            <div class="acompanhar-container">
+
+                <div class="icone">
+                    🔎
+                </div>
+
+
+                <h1>
+                    Acompanhar Denúncia de Abandono
+                </h1>
+
+
+                <p>
+                    Digite o número do protocolo da sua
+                    denúncia de abandono.
+                </p>
+
+
+                <form id="formConsultaAbandono">
+
+                    <label for="protocolo">
+                        Número do protocolo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="protocolo"
+                        placeholder="Ex.: PAT-AB-2026-1234"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="botao"
+                    >
+                        Consultar Denúncia
+                    </button>
+
+                </form>
+
+
+                <div id="resultado"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+ 
+        <p>
+            &copy; 2026 Patrulha das Patinhas. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="Script.js"></script>
+
+</body>
+
+</html>

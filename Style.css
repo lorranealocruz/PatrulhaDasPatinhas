@@ -1,0 +1,569 @@
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #fff1df;
+
+    color: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+
+    background-color: #e87519;
+
+    min-height: 75px;
+
+    padding: 12px 3%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 3px;
+
+    flex-wrap: wrap;
+}
+
+
+.nav-links li {
+    display: flex;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    padding: 9px 8px;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+
+    text-align: center;
+}
+
+
+.nav-links a:hover {
+
+    background-color: #b9530d;
+
+}
+
+
+/* ==============================
+   HOME
+============================== */
+
+.home {
+
+    min-height: calc(100vh - 140px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+.imagem-animais {
+
+    width: 420px;
+
+    max-width: 90%;
+
+    margin-bottom: 25px;
+}
+
+
+.imagem-animais img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.home h1 {
+
+    font-size: 48px;
+
+    color: #111;
+
+    margin-bottom: 15px;
+}
+
+
+.subtitulo {
+
+    font-size: 19px;
+
+    color: #5b4636;
+
+    margin-bottom: 30px;
+}
+
+
+.botoes-home {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==============================
+   BOTÕES
+============================== */
+
+.botao {
+
+    display: inline-block;
+
+    background-color: #e87519;
+
+    color: white;
+
+    border: none;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    padding: 14px 22px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 4px 10px rgba(190, 87, 13, 0.2);
+}
+
+
+.botao:hover {
+
+    background-color: #b9530d;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   FORMULÁRIOS
+============================== */
+
+.pagina-formulario {
+
+    padding: 60px 20px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.formulario-container {
+
+    width: 700px;
+
+    max-width: 100%;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(100, 55, 20, 0.12);
+
+    border-top: 6px solid #e87519;
+}
+
+
+.formulario-container h1 {
+
+    color: #b9530d;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.formulario-container > p {
+
+    text-align: center;
+
+    color: #59483a;
+
+    margin-bottom: 30px;
+}
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+label {
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    margin-top: 15px;
+}
+
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #e4c8ae;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #fffaf5;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #e87519;
+
+    box-shadow:
+        0 0 0 3px rgba(232, 117, 25, 0.15);
+}
+
+
+textarea {
+
+    resize: vertical;
+}
+
+
+.formulario-container .botao {
+
+    margin-top: 25px;
+}
+
+
+/* ==============================
+   ACOMPANHAR DENÚNCIA
+============================== */
+
+.pagina-acompanhar {
+
+    min-height: calc(100vh - 140px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+.acompanhar-container {
+
+    background-color: white;
+
+    width: 600px;
+
+    max-width: 100%;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    border-top: 6px solid #e87519;
+
+    box-shadow:
+        0 8px 25px rgba(100, 55, 20, 0.12);
+}
+
+
+.icone {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.acompanhar-container h1 {
+
+    color: #b9530d;
+
+    margin-bottom: 12px;
+}
+
+
+.acompanhar-container p {
+
+    color: #59483a;
+
+    margin-bottom: 25px;
+}
+
+
+.acompanhar-container form {
+
+    text-align: left;
+}
+
+
+.acompanhar-container .botao {
+
+    margin-top: 25px;
+}
+
+
+#resultado {
+
+    margin-top: 25px;
+
+    font-weight: bold;
+
+    color: #b9530d;
+}
+
+
+#mensagem {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #b9530d;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+
+    background-color: #c95d10;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        padding: 15px 3%;
+
+    }
+
+
+    .nav-links {
+
+        justify-content: center;
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-links {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .nav-links li {
+
+        width: 100%;
+
+    }
+
+
+    .nav-links a {
+
+        width: 100%;
+
+        font-size: 14px;
+
+    }
+
+
+    .home h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .subtitulo {
+
+        font-size: 17px;
+
+    }
+
+
+    .botoes-home {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 350px;
+
+    }
+
+
+    .botoes-home .botao {
+
+        width: 100%;
+
+    }
+
+
+    .formulario-container,
+    .acompanhar-container {
+
+        padding: 25px 20px;
+
+    }
+
+}
