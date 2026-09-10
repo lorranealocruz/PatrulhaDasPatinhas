@@ -1,6 +1,5 @@
-// ========================================
+
 // DENÚNCIA DE MAUS TRATOS
-// ========================================
 
 const formMausTratos =
     document.getElementById("formMausTratos");
@@ -31,9 +30,7 @@ if (formMausTratos) {
 }
 
 
-// ========================================
 // DENÚNCIA DE ABANDONO
-// ========================================
 
 const formAbandono =
     document.getElementById("formAbandono");
@@ -64,9 +61,7 @@ if (formAbandono) {
 }
 
 
-// ========================================
 // ACOMPANHAR MAUS TRATOS
-// ========================================
 
 const formConsultaMausTratos =
     document.getElementById("formConsultaMausTratos");
@@ -91,9 +86,7 @@ if (formConsultaMausTratos) {
 }
 
 
-// ========================================
 // ACOMPANHAR ABANDONO
-// ========================================
 
 const formConsultaAbandono =
     document.getElementById("formConsultaAbandono");
