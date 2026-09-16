@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="Assets/logo-coracao.ico" type="image/x-icon">
 
     <title>Patrulha das Patinhas</title>
 
@@ -12,12 +13,40 @@
 
 <body>
 
+    <audio id="somcachorro" src="Assets/latido.mp3.mp3"></audio>
+
+    <audio id="somgato" src="Assets/miado.mp3.mp3"></audio>
+
+    <script>
+        document.eddeventlistener("click",function(){
+            const cachorro=
+            document.getElementById("somcachorro");
+            const gato=
+            document.getElementById("somgato");
+
+            cachorro.currentTime = 0
+
+            cachorro.play()
+
+            cachorro.addEventListener("ended",function(){
+                gato.currentTime = 0;
+                gato.play();
+
+            },{once:true});
+        
+        
+            },{once:true});
+        
+    </script>
+    
+    
     <!-- NAVBAR -->
     <header>
         <nav class="navbar">
 
             <a href="Home.html" class="logo">
-                🐾 Patrulha das Patinhas
+                <img src="Assets/logo-coracao.ico" alt="Patrulha das patinhas" class="logo-img">
+                <span>Patrulha<br>das patinhas</span>
             </a>
 
             <ul class="nav-links">
@@ -61,7 +90,7 @@
             <div class="imagem-animais">
 
                 <img
-                    src="Assets/Patrulha2.jpeg"
+                    src="Assets/cao-gato.png"
                     alt="Cachorro e gato"
                 >
 
@@ -83,16 +112,21 @@
                 <a
                     href="Maus-tratos.html"
                     class="botao"
+                </a>
                 >
-                    Fazer Denúncia de Maus Tratos
+                    <img src="Assets/botao_maus_tratos.png"
+                    alt="Fazer denuncia de maus tratos">
                 </a>
 
 
                 <a
                     href="Abandono.html"
                     class="botao"
+                </a>
                 >
-                    Fazer Denúncia de Abandono
+                    <img src="Assets/botao_abandono.png"
+                    alt="Fazer denuncia de abandono">
+                    
                 </a>
 
             </div>

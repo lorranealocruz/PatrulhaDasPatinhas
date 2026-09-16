@@ -21,7 +21,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #fff1df;
+    background-color: #f5d3a6;
 
     color: #222;
 
@@ -48,7 +48,7 @@ main {
 
     min-height: 75px;
 
-    padding: 12px 3%;
+    padding: 12px 1%;
 
     display: flex;
 
@@ -73,7 +73,15 @@ main {
 
     font-weight: bold;
 
-    white-space: nowrap;
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+}
+.logo-img{
+    width: 55px;
+    height: auto;
+    
 }
 
 
@@ -104,7 +112,7 @@ main {
 
     text-decoration: none;
 
-    font-size: 13px;
+    font-size: 17px;
 
     font-weight: bold;
 
@@ -149,11 +157,13 @@ main {
 
 .imagem-animais {
 
-    width: 420px;
+    width: 480px;
 
     max-width: 90%;
 
-    margin-bottom: 25px;
+    margin-top: -25px;
+
+    margin-bottom: 180px;
 }
 
 
@@ -162,17 +172,16 @@ main {
     width: 100%;
 
     display: block;
+    background: #f5d3a6;
 
-    border-radius: 25px;
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
 .home h1 {
 
     font-size: 48px;
+
+    margin-top: -140px;
 
     color: #111;
 
@@ -201,6 +210,20 @@ main {
     flex-wrap: wrap;
 }
 
+.botoes-home .botao img{
+    width: 350px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin-top: -30px;
+}
+
+.botoes-home{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
 
 /* ==============================
    BOTÕES
@@ -210,7 +233,7 @@ main {
 
     display: inline-block;
 
-    background-color: #e87519;
+
 
     color: white;
 
@@ -224,14 +247,12 @@ main {
 
     padding: 14px 22px;
 
-    border-radius: 9px;
+    border-radius: 19px;
 
     cursor: pointer;
 
     transition: 0.3s;
 
-    box-shadow:
-        0 4px 10px rgba(190, 87, 13, 0.2);
 }
 
 
@@ -240,6 +261,10 @@ main {
     background-color: #b9530d;
 
     transform: translateY(-2px);
+}
+
+.botoes-home .botao:hover{
+    background-color: inherit;
 }
 
 
