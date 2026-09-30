@@ -103,6 +103,21 @@
                         placeholder="Informe o local"
                         required
                     >
+                    <!-- Campo de CEP -->
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" placeholder="Digite o CEP (só números)" maxlength="8" onblur="consultarCep(this.value)" required>
+
+    <!-- Campo de Logradouro (Rua) que vai preencher sozinho -->
+    <label for="logradouro">Logradouro / Rua:</label>
+    <input type="text" id="logradouro" placeholder="Preenchimento automático" required>
+
+    <!-- Campo de Bairro que vai preencher sozinho -->
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" placeholder="Preenchimento automático" required>
+
+    <!-- Campo de Cidade que vai preencher sozinho -->
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" placeholder="Preenchimento automático" required>
 
 
                     <label for="animal">
@@ -156,13 +171,8 @@
                     >
 
 
-                    <button
-                        type="submit"
-                        class="botao"
-                    >
-                        Enviar Denúncia
-                    </button>
-
+                    <button type="submit" class="botao">Enviar Denúncia</button>
+                    
                 </form>
 
 

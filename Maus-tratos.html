@@ -2,191 +2,123 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-          <link rel="shortcut icon" href="Assets/logo-coracao.ico" type="image/x-icon">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/logo-coracao.ico" type="image/x-icon">
     <title>
         Denúncia de Maus Tratos | Patrulha das Patinhas
     </title>
-
     <link rel="stylesheet" href="Style.css">
-
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-
     <header>
-
         <nav class="navbar">
-
             <a href="Home.html" class="logo">
-            <img src="Assets/logo-coracao.ico" 
-            alt="Patrulha das patinhas" class="logo-img">
-             <span>Patrulha<br>das patinhas</span>
+                <img src="Assets/logo-coracao.ico" alt="Patrulha das patinhas" class="logo-img">
+                <span>Patrulha<br>das patinhas</span>
             </a>
 
-
             <ul class="nav-links">
-
-                <li>
-                    <a href="Home.html">
-                        Início
-                    </a>
-                </li>
-
-                <li>
-                    <a href="Maus-tratos.html">
-                        Denúncia de Maus Tratos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="Abandono.html">
-                        Denúncia de Abandono
-                    </a>
-                </li>
-
-                <li>
-                    <a href="Acompanhar-maus-tratos.html">
-                        Acompanhar Denúncia de Maus Tratos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="Acompanhar-abandono.html">
-                        Acompanhar Denúncia de Abandono
-                    </a>
-                </li>
-
+                <li><a href="Home.html">Início</a></li>
+                <li><a href="Maus-tratos.html">Denúncia de Maus Tratos</a></li>
+                <li><a href="Abandono.html">Denúncia de Abandono</a></li>
+                <li><a href="Acompanhar-maus-tratos.html">Acompanhar Denúncia de Maus Tratos</a></li>
+                <li><a href="Acompanhar-abandono.html">Acompanhar Denúncia de Abandono</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-
     <!-- FORMULÁRIO -->
-
     <main>
-
         <section class="pagina-formulario">
-
             <div class="formulario-container">
-
                 <h1>
                     Denúncia de Maus Tratos
                 </h1>
 
                 <p>
-                    Preencha o formulário abaixo para registrar
-                    uma denúncia de maus-tratos contra um animal.
+                    Preencha o formulário abaixo para registrar uma denúncia de maus-tratos contra um animal.
                 </p>
-
 
                 <form id="formMausTratos">
 
-
-                    <label for="local">
-                        Local da ocorrência
-                    </label>
-
-                    <input
-                        type="text"
-                        id="local"
-                        name="local"
-                        placeholder="Informe o local da ocorrência"
+                    <label for="local">Local onde o animal foi encontrado</label>
+                    <input 
+                        type="text" 
+                        id="local" 
+                        name="local" 
+                        placeholder="Informe o local" 
                         required
                     >
 
-
-                    <label for="tipo-animal">
-                        Tipo de animal
-                    </label>
-
-                    <select
-                        id="tipo-animal"
-                        name="tipo-animal"
+                    <label for="cep">CEP:</label>
+                    <input 
+                        type="text" 
+                        id="cep" 
+                        name="cep" 
+                        placeholder="Digite o CEP (só números)" 
+                        maxlength="8" 
+                        onblur="consultarCep(this.value)" 
                         required
                     >
 
-                        <option value="">
-                            Selecione
-                        </option>
+                    <label for="logradouro">Logradouro / Rua:</label>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Preenchimento automático" required>
 
-                        <option value="cachorro">
-                            Cachorro
-                        </option>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Preenchimento automático" required>
 
-                        <option value="gato">
-                            Gato
-                        </option>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Preenchimento automático" required>
 
-                        <option value="outro">
-                            Outro
-                        </option>
-
+                    <label for="tipo-animal">Tipo de animal</label>
+                    <select id="tipo-animal" name="tipo-animal" required>
+                        <option value="">Selecione</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="outro">Outro</option>
                     </select>
 
-
-                    <label for="descricao">
-                        Descrição dos maus-tratos
-                    </label>
-
-                    <textarea
-                        id="descricao"
-                        name="descricao"
-                        rows="6"
-                        placeholder="Descreva o que aconteceu..."
+                    <label for="descricao">Descrição dos maus-tratos</label>
+                    <textarea 
+                        id="descricao" 
+                        name="descricao" 
+                        rows="6" 
+                        placeholder="Descreva o que aconteceu..." 
                         required
                     ></textarea>
 
-
-                    <label for="foto">
-                        Foto ou vídeo
-                    </label>
-
-                    <input
-                        type="file"
-                        id="foto"
-                        name="foto"
+                    <label for="foto">Foto ou vídeo</label>
+                    <input 
+                        type="file" 
+                        id="foto" 
+                        name="foto" 
                         accept="image/*,video/*"
                     >
 
-
-                    <button
-                        type="submit"
-                        class="botao"
+                    <button 
+                        type="submit" 
+                        class="botao" 
                     >
-                        Enviar Denúncia
+                        Enviar Denúncia 🐱
                     </button>
 
                 </form>
 
-
                 <p id="mensagem"></p>
 
             </div>
-
         </section>
-
     </main>
 
-
     <footer>
- 
         <p>
             &copy; 2026 Patrulha das Patinhas. Todos os direitos reservados.
         </p>
-
     </footer>
-
 
     <script src="Script.js"></script>
 
